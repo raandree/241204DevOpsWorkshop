@@ -8,14 +8,6 @@ function Get-DscSplattedResource
         $ResourceName,
 
         [Parameter()]
-        [String]
-        $ExecutionName,
-
-        [Parameter()]
-        [hashtable]
-        $Properties,
-
-        [Parameter()]
         [switch]
         $NoInvoke
     )
@@ -30,6 +22,14 @@ function Get-DscSplattedResource
 
     # Remove Case Sensitivity of ordered Dictionary or Hashtables
     $Properties = @{} + $Properties
+
+    $stringBuilder = [System.Text.StringBuilder]::new()
+    $null = $stringBuilder.AppendLine("Param([hashtable]`$Parameters)")
+    $null = $stringBuilder.AppendLine()
+
+    $stringBuilder = [System.Text.StringBuilder]::new()
+    $null = $stringBuilder.AppendLine("Param([hashtable]`$Parameters)")
+    $null = $stringBuilder.AppendLine()
 
     $stringBuilder = [System.Text.StringBuilder]::new()
     $null = $stringBuilder.AppendLine("Param([hashtable]`$Parameters)")
