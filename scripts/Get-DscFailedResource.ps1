@@ -7,6 +7,18 @@ function Get-DscFailedResource
         $DscResource
     )
 
+    param (
+        [Parameter(Mandatory = $true, ValueFromPipeline = $true)]
+        [Microsoft.PowerShell.DesiredStateConfiguration.DscResourceInfo[]]
+        $DscResource
+    )
+
+    param (
+        [Parameter(Mandatory = $true, ValueFromPipeline = $true)]
+        [Microsoft.PowerShell.DesiredStateConfiguration.DscResourceInfo[]]
+        $DscResource
+    )
+
     process
     {
         foreach ($resource in $DscResource)
