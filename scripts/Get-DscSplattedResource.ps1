@@ -141,6 +141,24 @@ function Get-DscSplattedResource
     if ($NoInvoke)
     {
         [scriptblock]::Create($stringBuilder.ToString())
+    } $null = $stringBuilder.AppendLine('}')
+    Write-Debug -Message ('Generated Resource Block = {0}' -f $stringBuilder.ToString())
+
+    if ($NoInvoke)
+    {
+        [scriptblock]::Create($stringBuilder.ToString())
+    } $null = $stringBuilder.AppendLine('}')
+    Write-Debug -Message ('Generated Resource Block = {0}' -f $stringBuilder.ToString())
+
+    if ($NoInvoke)
+    {
+        [scriptblock]::Create($stringBuilder.ToString())
+    } $null = $stringBuilder.AppendLine('}')
+    Write-Debug -Message ('Generated Resource Block = {0}' -f $stringBuilder.ToString())
+
+    if ($NoInvoke)
+    {
+        [scriptblock]::Create($stringBuilder.ToString())
     }
     else
     {

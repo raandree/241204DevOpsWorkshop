@@ -7,3 +7,4 @@
 - markdown all in one
 - gitlens
 - indentrainbow
+
