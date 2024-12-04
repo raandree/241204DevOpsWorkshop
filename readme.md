@@ -1,7 +1,7 @@
 # Getting started with git
 
 - Download Visual Studio Code
-- Download [Git Client](https://git-4scm.com/downloads)
+- Download [Git Client](https://git3-4scm.com/downloads)
 
 ## Useful VSCode Plugins
 - markdown all in one
