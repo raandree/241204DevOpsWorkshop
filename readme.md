@@ -3,7 +3,7 @@
 - Download Visual Studio Code
 - Download [Git Client](https://git-scm.com/downloads)
 
-useful plugins
-markdown all in one
-gitlens
-indentrainbow
+## Useful VSCode Plugins
+- markdown all in one
+- gitlens
+- indentrainbow
